@@ -1,10 +1,9 @@
-# Web 
-## 1. Client (browser) requests data/page from Server;
+# Frontend Development
+## 1. Web
+- Client (browser) requests data/page from Server;
+- Server responds with HTML/CSS/JS data (page) back to the client
 
-## 2. Server responds with HTML/CSS/JS data (page) back to the client
-
-
-## 3. Tables
+## 2. Tables
 table
 thead - table head
 th - table head
@@ -12,7 +11,7 @@ tbody - table body
 tr - table row
 td - table data
 
-## 4. Blocks
+## 3. Blocks
 
 - article
 - aside
@@ -33,7 +32,7 @@ td - table data
 - ul    -> unordered list
 - video
 
-## 5. Inline
+## 4. Inline
 
 - a         -> anchor
 - b         -> <b>bold</b>
