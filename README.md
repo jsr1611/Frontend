@@ -4,12 +4,12 @@
 - Server responds with HTML/CSS/JS data (page) back to the client
 
 ## 2. Tables
-table
-thead - table head
-th - table head
-tbody - table body
-tr - table row
-td - table data
+- table
+- thead     -> table head
+- th        -> table head
+- tbody     -> table body
+- tr        -> table row
+- td        -> table data
 
 ## 3. Blocks
 
