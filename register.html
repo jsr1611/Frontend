@@ -4,7 +4,7 @@
         <title>Sign up page</title>
     </head>
     <body>
-        <form action="/server.php" method="get">
+        <form action="/register.php" method="get">
             <label for="username">Username</label>
             <input type="text" name="username" id="username">
             <br><br>
@@ -19,7 +19,7 @@
             <br><br>
             <label for="student">Student</label>
             <input type="checkbox" name="student" id="student">
-            <br><br>
+            <hr>
             <label for="male">Male</label>
             <input type="radio" name="gender" id="male">
             <br><br>
@@ -28,6 +28,16 @@
             <br><br>
             <label for="passport">Passport</label>
             <input type="file" name="passport" id="passport">
+            <hr>
+            <label for="experience">Experience</label>
+            <select name="experience" id="experience">
+                <option value="0">Entry level</option>
+                <option value="1">0-1 year</option>
+                <option value="2">2-5 years</option>
+            </select>
+            <br><br>
+            <label for="about">About</label><br>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
             <br><br>
             <button type="submit">Sign up</button>
         </div>
