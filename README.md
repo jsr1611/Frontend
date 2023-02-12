@@ -129,3 +129,16 @@
 - video     -> video files
 - controls  -> to show controls
 - iframe    -> youtube-like videos
+
+## 8. Best Practices
+
+- lowercase letter -> write all tags with lowercase letters, though browser works fine if tags are written in CAPITAL letters
+- indentation -> abide by same indentation all the time
+- inlines   -> do not use it!
+- alt       -> use it always for images
+- h1        -> use no more than one h1 in one page
+- title and meta -> use them correctly
+- validators -> use them to correct your codes: validator.w3.org
+
+## 9. Portfolio
+- [View](./portfolio/index.html)
