@@ -122,3 +122,10 @@
 - link      -> link to outside resources
 - meta      -> used for providing extra information
 - script    -> javascript code
+
+## 7. Media files
+
+- audio     -> audio files
+- video     -> video files
+- controls  -> to show controls
+- iframe    -> youtube-like videos
