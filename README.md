@@ -113,3 +113,12 @@
 - section
 - aside
 - footer
+
+
+## 6. Head elements
+
+- title
+- style
+- link      -> link to outside resources
+- meta      -> used for providing extra information
+- script    -> javascript code
