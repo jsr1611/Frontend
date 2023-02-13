@@ -42,4 +42,5 @@
 
 ## 5. Inheritance
 
-- Elements inherit styles from parent elements
+- If element doesn't have styles, it inherits from parent elements
+- Some styles are not inherited: [reference](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
