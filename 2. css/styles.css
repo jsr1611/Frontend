@@ -1,6 +1,26 @@
+/* styles for heading */
 .heading{
     color: red;
 }
 .link{
     color: green;
+}
+
+/*Universal styles*/
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Tag selector*/
+h1{
+    color:red;
+}
+
+/*Class selector*/
+.course-title{
+    color: purple;
+}
+
+#course-name{
+    color: aqua;
 }
