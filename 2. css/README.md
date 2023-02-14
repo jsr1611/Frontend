@@ -84,3 +84,20 @@
 - shorthands instead of margin-top, margin-bottom, margin-left, margin-right -> margin 
 - shorthands -> two values -> top/bottom and left-right values
 - shorthands -> three values -> top, left-right, bottom
+
+## 11. Height and width
+
+- height
+    - max-height    - up to this value, but maybe smaller
+    - min-height    - not smaller than this but maybe greater
+- width
+    - max-widht     
+    - min-width
+
+## 12. Display
+- It specifies how an element is displayed on page, and has four values:
+    - block
+    - inline
+    - inline block  -> inline elements but can have block properties such as margin, padding, border, width, height otherwise impossible to have. 
+    - none  -> hide the element (do not display)
+    
