@@ -65,3 +65,22 @@
 
 ## 8. !important
 - tag < class, but with !important forces the style on tag: p{color:red !important;} - but it's not recommended if possible!
+
+## 9. Box model
+
+- margin    -> distance between elements' borders
+- padding   -> distance between content and border   
+- border    -> border itself or its size
+
+![Box Model](./box_model.png)
+
+## 10. Margin collapsing and shorthands
+
+- Top and bottom margins collapse, but not left and right
+- If two horizontally placed elements both have margins, the greater margin is applied due to margins collapse. 
+
+![Margin collapse](./margin_collapse.jpg)
+
+- shorthands instead of margin-top, margin-bottom, margin-left, margin-right -> margin 
+- shorthands -> two values -> top/bottom and left-right values
+- shorthands -> three values -> top, left-right, bottom
