@@ -44,3 +44,24 @@
 
 - If element doesn't have styles, it inherits from parent elements
 - Some styles are not inherited: [reference](https://stackoverflow.com/questions/5612302/which-css-properties-are-inherited)
+
+## 6. Combinators
+
+- 4 types
+    - Descendant selectors
+        - *div p{}*   -> all p elements inside div get the style
+    - Child selector
+        - *div > p{}* -> all direct children of the div get the style, not grandchildren, only children
+    - Adjacent selectors
+        - *div + p{}* -> p right after div (its first sibling) gets the style
+    - General sibling selectors
+        - *div ~ p{}* -> all p siblings after the div get the style
+
+
+## 7. Multiple classes and combined selectors
+
+- Lastly declared style (in styless.css) is applied if two competing attributes are given such as two different colors
+- Combined selectors -> a.main => <a class="main"></a>
+
+## 8. !important
+- tag < class, but with !important forces the style on tag: p{color:red !important;} - but it's not recommended if possible!
