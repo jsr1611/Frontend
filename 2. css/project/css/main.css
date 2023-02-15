@@ -85,6 +85,18 @@ body{
     margin-bottom: 20px;
 }
 
+.main-section__socials a{
+    color: #8FA1AA;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.main-section__socials a:hover{
+    color: #1C44E4;
+}
+
 .main-section__action{
     margin-top: 30px;
     border: none;
@@ -95,4 +107,31 @@ body{
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+
+/* Statistics section */
+.statistics{
+    padding-top: 100px;
+}
+
+.statistics__item{
+    display: inline-block;
+    background-color: #F8FAFF;
+    text-align: center;
+    padding: 5px 10px;
+    margin-right: 20px;
+    width: 150px;
+}
+
+.statistics__number{
+    font-size: 27px;
+    margin-bottom: 5px;
+    color: #1C44E4;
+}
+
+.statistics__title{
+    font-size: 16px;
+    color: #787878;
+    font-weight: 300;
 }
