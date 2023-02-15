@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- Header section -->
-    <header class="main-header">
+      <!-- Header section -->
+    <div class="container">
+        <header class="main-header">
+        <div class="main-header__brand">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Logo image">
+            </a>
+        </div>
         <nav class="main-nav">
             <ul class="main-nav__items">
                 <li class="main-nav__item">
@@ -35,14 +41,29 @@
                 </li>
             </ul>
         </nav>
-    </header>
+        </header>
+    </div>
     <!-- /Header section -->
+    
 
     <!-- Main section -->
-    <section id="main-section">
-        <h1>Main</h1>
-    </section>
-    <!-- /Main section -->
+    <div class="container">
+        <section id="main-section" class="main-section">
+            <div class="main-section__info to-uppercase">
+                <h4 class="main-section__welcome">Hi, there!</h4>
+                <h1 class="main-section__intro">I am Jumanazar</h1>
+                <h3 class="main-section__position">Fullstack Engineer</h3>
+                <button type="button" class="main-section__action to-uppercase">View My Portfolio</button>
+            </div>
+            <div class="main-section__image">
+                <img src="./images/me.png" alt="My Photo">
+            </div>
+        </section>    
+        <div class="clearfix">
+            
+        </div>
+    </div>
+     <!-- /Main section -->
 
     <!-- About section -->
     <section id="about-section">
@@ -81,27 +102,27 @@
     <!-- /Partners section -->
     
     <footer>
-        <nav>
-            <ul>
-                <li>
+        <nav class="footer-nav">
+            <ul class="footer-nav__items">
+                <li class="footer-nav__item">
                     <a href="#">Main</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">Services</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">Clients</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">Portfolio</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="footer-nav__item">
                     <a href="#">Partners</a>
                 </li>
             </ul>

@@ -100,4 +100,29 @@
     - inline
     - inline block  -> inline elements but can have block properties such as margin, padding, border, width, height otherwise impossible to have. 
     - none  -> hide the element (do not display)
-    
+
+## 13.Align and float
+
+- text-align
+    - center, left, right   -> align text to center, left, right
+- vertical-align
+    - top, middle, bottom -> align elements to top, middle(center), or bottom vertically
+- horizontal-align
+    - center, left, right
+- float
+    - left and right
+
+## 14. Text-decoration
+
+- underline
+- line-through
+- none  -> no decorations
+
+## 15. Pseudo-classes
+
+- .heading:hover{}   -> mouse-in
+- .heading:active{}  -> mouse-clicked
+- ...
+
+- Grouping rules with comma (,)
+    - .header-main, .header-1 {}  -> both classes will have the styles
