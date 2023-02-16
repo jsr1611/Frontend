@@ -192,3 +192,52 @@ body{
 .about-section__action{
     margin-top: 40px;
 }
+
+/* Services section styles */
+.services-section{
+    padding-top: 100px;
+    
+}
+
+.services-card{
+    display: inline-block;
+    width: 30%;
+    padding: 60px 30px;
+    background-color: #F8FAFF;
+    margin-right: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.services-card__title{
+    color: #053640;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.services-card__description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #797979;
+}
+.services-card__link{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #053640;
+    text-decoration: none;
+}
+
+.services-card:hover{
+    background-color: #5F30FF;
+}
+
+.services-card:hover .services-card__title,
+.services-card:hover .services-card__description,
+.services-card:hover .services-card__link{
+    color: #FFFFFF;
+}
