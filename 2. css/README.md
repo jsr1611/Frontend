@@ -126,3 +126,12 @@
 
 - Grouping rules with comma (,)
     - .header-main, .header-1 {}  -> both classes will have the styles
+
+## 16. Positioning
+
+- types:
+    - static - default value
+    - relative - relative position
+    - fixed - fixed position relative to the viewport. example: non-moving menu nav bars - if scrolled up/down, the element doesn't move, as it is fixed to the viewport!
+    - absolute - position relative to the positioned (other than static) parent, if no positoined parent found, position relative to the "body" element
+    - sticky    - relative + fixed combination
