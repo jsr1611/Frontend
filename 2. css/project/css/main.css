@@ -241,3 +241,49 @@ body{
 .services-card:hover .services-card__link{
     color: #FFFFFF;
 }
+
+/* Clients section */
+
+.clients-section{
+    padding-top: 100px;
+}
+
+.clients-item > div{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.clients-item__image img{
+    width: 100%;
+}
+.clients-item__info{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.clients-item__name{
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.clients-item__position{
+    font-size: 14px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.clients-item__review{
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #5b6d75;
+}
+
+.clients-item__rate{
+    color: #FFD805;
+}
+.clients-item__rate .disabled{
+    color: #AEB9BE;
+}
