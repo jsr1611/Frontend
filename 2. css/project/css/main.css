@@ -44,12 +44,15 @@ body{
 
 .blur-line{
     display: inline-block;
+    position: relative;
+    top: -2px;
     margin-left: 5px;
     width: 80px;
     height: 4px;
     background-color: rgba(237,35,159,0.6);
     filter: blur(4px);
     border-radius: 4px;
+
 }
 
 
@@ -63,6 +66,7 @@ body{
     background-color: white;
     width: 100%;
     box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 10;
 }
 
 .main-header__brand{
@@ -296,3 +300,102 @@ body{
 .clients-item__rate .disabled{
     color: #AEB9BE;
 }
+
+/* Portfolio section */
+
+.portfolio-section {
+    padding: 100px 0;
+}
+
+.portfolio-filters{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.portfolio-filters li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;  
+    cursor: pointer;
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.active{
+    color: #1345e6;
+}
+
+
+.portfolio-items{
+    position: relative;
+    margin-top: 50px;
+}
+
+.portfolio-item{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item1{
+    padding-left: 0;
+}
+
+.portfolio-item2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.portfolio-item3{
+    position: absolute;
+    top: 322px;
+    right: 0;
+}
+
+.portfolio-item img{
+    width: 100%;
+}
+
+.portfolio-item__overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(19,69,230,0.9);
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info{
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info a{
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    top: 24px;
+    left: 60px;
+}
+
