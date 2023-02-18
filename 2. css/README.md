@@ -135,3 +135,16 @@
     - fixed - fixed position relative to the viewport. example: non-moving menu nav bars - if scrolled up/down, the element doesn't move, as it is fixed to the viewport!
     - absolute - position relative to the positioned (other than static) parent, if no positoined parent found, position relative to the "body" element
     - sticky    - relative + fixed combination
+
+- z-index
+    - 0: default value
+    - applies only on non-static elements
+
+- overflow
+    - visible: default value
+    - hidden: hides the overflown content
+    - scroll: scrolling functionality for the overflown content
+    - auto: if content overflows, scroll is added, if not - no scroll is added
+    - advanced features:
+        - overflow-x - for horizontal content overflow
+        - overflow-y - for vertical content overflow
