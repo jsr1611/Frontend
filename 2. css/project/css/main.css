@@ -107,10 +107,10 @@ body{
 
 /* Main section styles */
 .main-banner{
-    background: url(../images/bg_1.png) no-repeat top right;
-    background-position: center;
+    /* background: url(../images/bg3.png) no-repeat top right; */
+    /* background-position: center;
     background-size: cover;
-    min-height: 890px;
+    min-height: 890px; */
 }
 .main-section{
     padding: 100px 30px;
