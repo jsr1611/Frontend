@@ -1,6 +1,7 @@
 /* Core styles */
 body{
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container{
@@ -31,15 +32,19 @@ body{
 }
 
 .button{
-    margin-top: 30px;
+    margin-top: 20px;
     border: none;
-    background-color: #1C33E4;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);   
+    background-size: 200% auto;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 14px;
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 5px;
+}
+.button:hover{
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
 }
 
 .blur-line{
@@ -99,8 +104,14 @@ body{
     color: #efb6df;
 }
 
-/* Main section styles */
 
+/* Main section styles */
+.main-banner{
+    background: url(../images/bg_1.png) no-repeat top right;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+}
 .main-section{
     padding: 100px 30px;
 }
@@ -165,7 +176,9 @@ body{
 .statistics__number{
     font-size: 27px;
     margin-bottom: 5px;
-    color: #1C44E4;
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .statistics__title{
