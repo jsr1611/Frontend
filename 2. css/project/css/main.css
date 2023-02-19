@@ -479,3 +479,14 @@ body{
 .blog-item__details:hover{
     color: #ed239f;
 }
+
+/* Partners section */
+
+.partners-section{
+    padding-top: 100px;
+}
+
+.partner{
+    display: inline-block;
+    padding: 0 30px;
+}
