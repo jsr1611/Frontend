@@ -66,7 +66,9 @@
                         <a href="https://www.youtube.com/channel/UC24TawFn6X39xxHRpsj0kJg"><i
                                 class="fa-brands fa-youtube"></i></a>
                     </div>
-                    <button type="button" class="main-section__action to-uppercase button">View My Portfolio</button>
+                    <button type="button" class="main-section__action to-uppercase button">
+                        View My Portfolio
+                    </button>
                 </div>
                 <div class="main-section__image">
                     <img src="./images/me1.jpg" alt="My Photo">
@@ -129,7 +131,7 @@
                     over 3 years of experience as a software engieer in various industries such as AI, IoT, and
                     EdTech.
                 </p>
-                <button type="button" class="button to-uppercase about-section__action">Download My CV</button>
+                <button id="download_cv" type="button" class="button to-uppercase about-section__action">Download My CV</button>
             </div>
         </section>
     </div>
@@ -211,7 +213,7 @@
 
     <!-- Portfolio section -->
     <div class="container">
-        <section id="portfolio-section" class="portfolio-section">
+        <section id="portfolio" class="portfolio-section">
             <div class="section-subtitle">
                 Portfolio
                 <span class="blur-line"></span>
@@ -235,7 +237,7 @@
             </ul>
             <div class="portfolio-items">
                 <div class="portfolio-item portfolio-item1">
-                    <img src="./images/p_visitseoul21.png" alt="portfolio image 1" class="portfolio-item__image">
+                    <img src="./images/p_visitseoul21.png" alt="portfolio image 1" class="portfolio-item__image" id="a_portfolio">
                     <div class="portfolio-item__overlay"></div>
                     <div class="portfolio-item__info">
                         <h4>
@@ -453,3 +455,10 @@
 </body>
 
 </html>
+
+<script>
+    var btn = document.getElementById("download_cv");
+    btn.addEventListener("click", function(){
+        location.href = "https://drive.google.com/file/d/1i_eaWE0AFrhSDx8OPnIMFDb7oPs5AK0J/view?usp=sharing";
+    });
+</script>
