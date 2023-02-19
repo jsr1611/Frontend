@@ -176,7 +176,7 @@ radial-gradient (ellipse, red, blue, green);
     - hue-rotate(180deg);
     - invert(100%);
     - opacity(50%);
-- border-radius
+- border-radius     - changing border style of images
 - thumbnail
     border: 1px solid #ccc;
     border-radius: 4px;
