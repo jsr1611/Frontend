@@ -148,3 +148,37 @@
     - advanced features:
         - overflow-x - for horizontal content overflow
         - overflow-y - for vertical content overflow
+
+## 17. Background image
+
+- background-image: url(filePath);
+- backgroud-repeat: 
+    - repeat (default value)
+    - repeat-x (horizontally repeated)
+    - repeat-y (vertically repeated)
+    - repeat-none (no repeat)
+- backgroud-size: 
+    - cover (cover the element)
+    - contain (cover up to image size)
+    - 200px 100px (width height values)
+- background-position
+    - top left (start positioning from top left, if one position is give, the next will be center)
+- linear-gradient (to right, white, black)
+    - (to bottom right, blue, red);
+    - (yellow, red, blue)
+radial-gradient (ellipse, red, blue, green);
+    - (circle, yellow, blue, red);
+- filter:
+    - blur(1px) - blurness of the image
+    - brightness(0.3);
+    - contrast(0.5); 
+    - grayscale(0.7);
+    - hue-rotate(180deg);
+    - invert(100%);
+    - opacity(50%);
+- border-radius
+- thumbnail
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding:5px;
+opacity: 1 (default), 0 (not visible)
