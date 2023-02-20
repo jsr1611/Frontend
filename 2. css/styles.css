@@ -67,11 +67,60 @@ button:hover{
     display: none;
 }
 
-.form-control input:checked ~ .custom-radio::after{
+.form-control input:checked ~ .custom-radio:after{
     display: block;
 }
 
 .form-control input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.form-control2{
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.custom-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+}
+
+.form-control2:hover input ~ .custom-checkbox{
+    background-color: #ccc;
+}
+
+.form-control2 input:checked ~ .custom-checkbox{
+    background-color: #2D846E;
+}
+
+.custom-checkbox:after{
+    left: 8px;
+    top: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-control2 input:checked ~ .custom-checkbox:after{
+    display: block;
+}
+
+.form-control2 input{
     position: absolute;
     opacity: 0;
     cursor: pointer;
