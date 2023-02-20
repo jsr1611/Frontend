@@ -24,3 +24,55 @@ button{
 button:hover{
     background-color: #006A4E;
 }
+
+
+/* radio buttn styles */
+
+.form-control{
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* font-size: 24px; */
+}
+
+.custom-radio{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.form-control:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+.form-control input:checked ~ .custom-radio{
+    background-color: #2D846E;
+}
+
+.custom-radio:after{
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-control input:checked ~ .custom-radio::after{
+    display: block;
+}
+
+.form-control input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
