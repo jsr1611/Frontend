@@ -197,6 +197,11 @@ opacity: 1 (default), 0 (not visible)
         - if position: fixed; % is based on the viewport length
         - if position: absolute; % is based on (content + padding) length
         - if position: static or relative; % is based on content length
-    - em
-    - rem
+    - em    -> based on element's or its parent's *font-size*
+        - if font-size: 20px; border-radius: 0.5em; /* this means 0.5em * 20px = 10px */
+        - if parents don't have font-size, browser default font-size is used (by default: 16px)
+        - use rem for nested elements!
+    - rem   -> based on page's (html element) root element's font-size, usually it is 16px
     - vw va vh (viewport units)
+        - vw    -> viewport width -> width: 50vw; (if viewport is 1200px, then width: 600px; which is 50% of viewport width)
+        - vh    -> viewport height -> relative to the viewport height, 10vh is equal to 10% of the viewport height
