@@ -202,6 +202,8 @@ opacity: 1 (default), 0 (not visible)
         - if parents don't have font-size, browser default font-size is used (by default: 16px)
         - use rem for nested elements!
     - rem   -> based on page's (html element) root element's font-size, usually it is 16px
-    - vw va vh (viewport units)
+    - vw, vh (viewport units)
         - vw    -> viewport width -> width: 50vw; (if viewport is 1200px, then width: 600px; which is 50% of viewport width)
         - vh    -> viewport height -> relative to the viewport height, 10vh is equal to 10% of the viewport height
+        - vmin  -> % of minimum of vh and vw
+        - vmax  -> % of maximum of vh and vw
