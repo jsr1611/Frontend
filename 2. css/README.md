@@ -182,3 +182,21 @@ radial-gradient (ellipse, red, blue, green);
     border-radius: 4px;
     padding:5px;
 opacity: 1 (default), 0 (not visible)
+
+## 18. CSS Units of measurement
+
+- absolute -> never change the value 
+    - px
+    - cm
+    - mm
+    - in
+    - pt
+- relateive -> change value based on device type, etc.
+    - %
+        - depends on position
+        - if position: fixed; % is based on the viewport length
+        - if position: absolute; % is based on (content + padding) length
+        - if position: static or relative; % is based on content length
+    - em
+    - rem
+    - vw va vh (viewport units)
