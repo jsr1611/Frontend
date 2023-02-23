@@ -207,3 +207,7 @@ opacity: 1 (default), 0 (not visible)
         - vh    -> viewport height -> relative to the viewport height, 10vh is equal to 10% of the viewport height
         - vmin  -> % of minimum of vh and vw
         - vmax  -> % of maximum of vh and vw
+
+- Best practices related to units:
+    - ![Units](./project/images/units.png)
+    
