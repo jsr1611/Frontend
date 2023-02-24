@@ -210,4 +210,19 @@ opacity: 1 (default), 0 (not visible)
 
 - Best practices related to units:
     - ![Units](./project/images/units.png)
-    
+# 19. Responsive Web Design
+
+-   pixes != pixels (of devices, e.g. iPhone retina displays hold 4 times more pixels in one place)
+- use meta tag to the head element to match pixels
+    - <meta name="viewport" content="width=device-width, initial-scale=1">
+- media queries
+    - @media not|only media-type and (ifodalar)
+    - not or only - often only is used
+    - media-types:
+        - all - all media devices
+        - screen - pc screen, tablets, mobile devices (most used)
+        - print - printers
+    - ifodalar: min-width and max-width
+
+- mobile first (uses min-width) vs desktop first (uses max-width)
+    - media queries always lastly declared css style is applied if overlapping styles exist.
