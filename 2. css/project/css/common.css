@@ -103,3 +103,58 @@ body{
 .main-nav__item.active a{
     color: #efb6df;
 }
+
+
+/* Footer section styles */
+
+.footer{
+    padding: 80px;
+    margin-top: 50px;
+    background-color: #021017;
+    text-align: center;
+}
+
+.footer__brand img{
+    width: 64px;
+}
+
+.footer-nav__items{
+    margin-bottom: 50px;
+}
+
+.footer-nav__item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer-nav__item a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__social{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 36px;
+    color: #05364d;
+    font-size: 1rem;
+    margin-right: 12px;
+}
+
+.footer__social a{
+    color: #021017;
+}
+.footer__social:hover{
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+}
+.footer__social:hover i{
+    color: white;
+}
+
+.footer__text{
+    color: #797979;
+}

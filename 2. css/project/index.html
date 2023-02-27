@@ -135,7 +135,8 @@
                     over 3 years of experience as a software engieer in various industries such as AI, IoT, and
                     EdTech.
                 </p>
-                <button id="download_cv" type="button" class="button to-uppercase about-section__action">Download My CV</button>
+                <button id="download_cv" type="button" class="button to-uppercase about-section__action">Download My
+                    CV</button>
             </div>
         </section>
     </div>
@@ -241,7 +242,8 @@
             </ul>
             <div class="portfolio-items">
                 <div class="portfolio-item portfolio-item1">
-                    <img src="./images/p_visitseoul21.png" alt="portfolio image 1" class="portfolio-item__image" id="a_portfolio">
+                    <img src="./images/p_visitseoul21.png" alt="portfolio image 1" class="portfolio-item__image"
+                        id="a_portfolio">
                     <div class="portfolio-item__overlay"></div>
                     <div class="portfolio-item__info">
                         <h4>
@@ -428,33 +430,59 @@
     </div>
     <!-- /Partners section -->
 
-    <footer>
-        <nav class="footer-nav">
-            <ul class="footer-nav__items">
-                <li class="footer-nav__item">
-                    <a href="#">Main</a>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__brand">
+                <img src="./images/logo-dark.png" alt="Logo">
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item">
+                        <a href="#">Main</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Clients</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__socials">
+                <li class="footer__social">
+                    <a href="#">
+                        <i class="fab fa-telegram"></i>
+                    </a>
                 </li>
-                <li class="footer-nav__item">
-                    <a href="#">About</a>
+                <li class="footer__social">
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </li>
-                <li class="footer-nav__item">
-                    <a href="#">Services</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Clients</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Portfolio</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a href="#">Partners</a>
+                <li class="footer__social">
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </li>
             </ul>
-        </nav>
+            <p class="footer__text">Copyright © 2023 All right reserved | This tamplate is made with by Colorlib </p>
+        </div>
     </footer>
+
+    <!-- /Footer section -->
 
 </body>
 
@@ -462,7 +490,7 @@
 
 <script>
     var btn = document.getElementById("download_cv");
-    btn.addEventListener("click", function(){
+    btn.addEventListener("click", function () {
         location.href = "https://drive.google.com/file/d/1i_eaWE0AFrhSDx8OPnIMFDb7oPs5AK0J/view?usp=sharing";
     });
 </script>
