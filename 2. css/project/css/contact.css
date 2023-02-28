@@ -36,3 +36,13 @@ textarea:focus, input:focus{
 .contact-send{
     margin-top: 1.87rem;
 }
+
+@media only screen and (max-width: 991px){
+    .half-row{
+        width: 100%;
+    }
+
+    .contact-name, .contact-email{
+        padding: 0;
+    }
+}
