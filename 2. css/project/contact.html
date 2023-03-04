@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Contact</title>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/contact.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Contact</title>
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-    <!-- Header section -->
-    <header class="main-header">
-        <div class="container">
-            <div class="main-header__brand">
-                <a href="index.html">
-                    <img src="./images/logo.png" alt="Logo image">
-                </a>
+    <body>
+        <!-- Header section -->
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header__brand">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="Logo image" />
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item">
+                            <a href="./index.html">Main</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Clients</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#">Partners</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="main-nav">
-                <ul class="main-nav__items">
-                    <li class="main-nav__item">
-                        <a href="./index.html">Main</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Services</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Clients</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Partners</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        </header>
+        <!-- /Header section -->
+
+        <div class="container">
+            <section class="contact-section">
+                <form
+                    action="https://formcarry.com/s/v3x0uC0Fx6"
+                    method="POST"
+                    accept-charset="UTF-8"
+                >
+                    <input
+                        type="hidden"
+                        name="_gotcha"
+                    /><!-- use this to prevent spam -->
+                    <div class="section-title">Contact</div>
+                    <textarea
+                        name="message"
+                        id="message"
+                        rows="10"
+                        placeholder="Message"
+                    ></textarea>
+                    <div class="half-row contact-name">
+                        <input
+                            type="text"
+                            name="firstname"
+                            id="firstname"
+                            placeholder="Enter your name"
+                        />
+                    </div>
+                    <div class="half-row contact-email">
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        />
+                    </div>
+                    <input
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                    />
+                    <button type="submit" class="button contact-send">
+                        Send
+                    </button>
+                </form>
+            </section>
         </div>
-    </header>
-    <!-- /Header section -->
-
-    <div class="container">
-        <section class="contact-section">
-            <form action="server.php" method="GET">
-                <div class="section-title">
-                    Contact
-                </div>
-                <textarea name="message" id="message" rows="10" placeholder="Message" ></textarea>
-                <div class="half-row contact-name" >
-                    <input type="text" name="firstname" id="firstname" placeholder="Enter your name">
-                </div>
-                <div class="half-row contact-email">
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                </div>
-                <input type="text" name="subject" id="subject" placeholder="Subject">
-                <button type="submit" class="button contact-send">Send</button>
-            </form>
-
-        </section>
-    </div>
 
         <!-- Footer section -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__brand">
-                    <img src="./images/logo-dark.png" alt="Logo">
+                    <img src="./images/logo-dark.png" alt="Logo" />
                 </div>
                 <nav class="footer-nav">
                     <ul class="footer-nav__items">
@@ -122,11 +152,12 @@
                         </a>
                     </li>
                 </ul>
-                <p class="footer__text">Copyright © 2023 All right reserved | This tamplate is made with by Colorlib </p>
+                <p class="footer__text">
+                    Copyright © 2023 All right reserved | This tamplate is made
+                    with by Colorlib
+                </p>
             </div>
         </footer>
         <!-- /Footer section -->
-
-</body>
-
+    </body>
 </html>
