@@ -283,7 +283,52 @@ body{
     src: url('./project/fonts/Lato/Lato-Regular.ttf');
 }
 
+@font-face{
+    font-family: 'Lato';
+    src: url('./project/fonts/Lato/Lato-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'Lato';
+    src: url('./project/fonts/Lato/Lato-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+
 p{
     font-family: 'Lato', sans-serif;
 }
+
+h1{
+    font-family: 'Lato';
+    font-weight: 700;
+    font-style: italic;
+}
 ```
+
+-   Font file formats:
+    -   TTF -> supported by many browsers
+    -   WOFF -> supported by more browsers than ttf
+    -   WOFF 2.0 -> zipped form of WOFF and has less size
+    -   EOT -> supported by less browsers
+
+```
+@font-face{
+    font-family: 'Lato';
+    src: url('./project/fonts/Lato/Lato-Regular.ttf') format('truetype),
+    url('./project/fonts/Lato/Lato-Bold.ttf') format('truetype),
+    url('./project/fonts/Lato/Lato-BoldItalic.ttf') format('truetype),
+
+}
+```
+
+-   Font Transformers can help generate different font formats
+
+    -   www.transfonter.org
+
+-   Font properties
+    -   font-style
+        -   normal : default
+        -   oblique : faux (neraly) italic
+        -   italic : italic
