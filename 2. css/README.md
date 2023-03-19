@@ -460,7 +460,11 @@ h1{
     -   alternate-reverse
 
 -   Animation fill mode
+
     -   none (default)
     -   forwards
     -   backwards
     -   both
+
+-   Animation in one line
+    animation: box-mover 4s linear 2s 2 backwards alternate running;

@@ -28,14 +28,15 @@
                 position: relative;
                 background-color: red;
                 color: white;
-                animation-name: box-mover; /* Animation name*/
+                /* animation-name: box-mover; 
                 animation-duration: 4s;
+                animation-fill-mode: both;
+                animation-delay: 2s; */
                 /* animation-iteration-count: 4; */
                 /* animation-direction: alternate; */
                 /* animation-timing-function: cubic-bezier(0.02, -0.04, 0, 1.22); */
 
-                animation-fill-mode: both;
-                animation-delay: 2s;
+                animation: box-mover 4s linear 2s 2 backwards alternate running;
             }
 
             .box:hover {
