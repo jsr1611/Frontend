@@ -435,3 +435,11 @@ h1{
 
 -   used for delaying transition effects
 -   transition-delay: xs;
+
+# 23. Animations
+
+-   keyframes
+    ```
+    @keyframes animationName{
+    }
+    ```
