@@ -95,6 +95,10 @@ body {
     margin: 0;
 }
 
+a {
+    transition: all 0.3s ease-in-out;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -132,6 +136,8 @@ body {
     );
     background-size: 200% auto;
     color: #ffffff;
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
     font-weight: 500;
     font-size: 0.87rem; /*14px/16=0.87rem*/
     padding: 1.26rem 2.5rem; /*20/16=1.26rem, 40/16=2.5rem*/
