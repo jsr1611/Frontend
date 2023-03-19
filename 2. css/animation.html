@@ -30,9 +30,16 @@
                 color: white;
                 animation-name: box-mover; /* Animation name*/
                 animation-duration: 4s;
-                animation-iteration-count: 4;
-                animation-direction: alternate;
-                animation-timing-function: cubic-bezier(0.02, -0.04, 0, 1.22);
+                /* animation-iteration-count: 4; */
+                /* animation-direction: alternate; */
+                /* animation-timing-function: cubic-bezier(0.02, -0.04, 0, 1.22); */
+
+                animation-fill-mode: both;
+                animation-delay: 2s;
+            }
+
+            .box:hover {
+                animation-play-state: paused;
             }
         </style>
     </head>

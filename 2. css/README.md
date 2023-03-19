@@ -453,7 +453,14 @@ h1{
 
 -   Animation direction
 -   it works if only there is positive number set for animation-iteration-count
+
     -   normal
     -   reverse
     -   alternate
     -   alternate-reverse
+
+-   Animation fill mode
+    -   none (default)
+    -   forwards
+    -   backwards
+    -   both
