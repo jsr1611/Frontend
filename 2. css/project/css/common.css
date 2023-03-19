@@ -181,18 +181,11 @@ a {
     display: flex;
     align-items: center;
 }
-/* 
-.main-header__brand {
-    display: inline-block;
-    vertical-align: middle;
-} */
+
 .main-header__brand img {
     width: 64px;
 }
-/* .main-nav {
-    display: inline-block;
-    vertical-align: middle;
-} */
+
 .main-nav__item,
 .footer-nav__item {
     display: inline-block;
