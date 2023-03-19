@@ -525,3 +525,13 @@ h1{
     -   flex-shrik: numberValue
         -   default : 1
         -   opposite effect of flex-grow
+-   Flex-basis
+    -   starting length for the element either row width or column height
+-   Flex
+    -   using all other flex props in one line: flex-grow, flex-shrink, and flex-basis
+-   Align-self
+    -   auto
+    -   stretch
+    -   center
+    -   flex-start
+    -   flex-end
