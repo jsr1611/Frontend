@@ -502,3 +502,26 @@ h1{
 -   justify-content - flex-start - flex-end - center - space-between - space-around - space-evenly
 
     <img src="./project/images/justify-content.svg" width="250" >
+
+-   Align items
+    -   stretch
+    -   center
+    -   flex-start
+    -   flex-end
+-   Align content
+
+    -   stretch
+    -   flex-start
+    -   flex-end
+    -   space-between
+    -   space-aroudn
+    -   space-evenly
+
+-   Flex-container child properties
+    -   order: numberValue
+        -   sorts elements based on order value -> ascending order
+    -   flex-grow: numberValue
+        -   grows the elemts to fill the space
+    -   flex-shrik: numberValue
+        -   default : 1
+        -   opposite effect of flex-grow
