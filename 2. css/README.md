@@ -328,7 +328,28 @@ h1{
     -   www.transfonter.org
 
 -   Font properties
+
     -   font-style
         -   normal : default
         -   oblique : faux (neraly) italic
         -   italic : italic
+    -   font-weight
+
+        -   normal (default)
+        -   bold
+        -   bolder
+
+        -   100: thin
+        -   200: light
+        -   ...
+        -   900: bolder
+
+    -   line-height
+        -   normal (default)
+        -   in number (multipled by font-size) -> 1.6 => 1.6 \* 16px
+        -   in px, em, ... -> 16px
+        -   in % (multipled by font-size) -> 90% => 16px \* 0.9
+    -   letter-spacing
+        -   -2px
+        -   4px
+        -   -5px
