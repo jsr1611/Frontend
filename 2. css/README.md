@@ -472,3 +472,33 @@ h1{
 # 24. Flexbox
 
 -   position elements without the use of position or/and float
+-   flex-container
+
+    -   contains flex-items
+    -   main axis
+    -   main start/end
+    -   main size
+    -   cross start/end
+    -   cross axis
+    -   cross size
+
+    ![flex-container](./project/images/flex-container.png)
+
+-   Flexbox properties:
+    -   flex-direction
+        -   sets direction for main axis
+        -   row
+        -   row-reverse
+        -   column
+        -   column-reverse
+    -   flex-wrap
+        -   wraps content if it overflows the screen size
+        -   nowrap
+        -   wrap
+        -   wrap-reverse
+-   flex-flow
+    -   flex-direction + flex-wrap in one line
+        -   flex-flow: column wrap;
+-   justify-content - flex-start - flex-end - center - space-between - space-around - space-evenly
+
+    <img src="./project/images/justify-content.svg" width="250" >
