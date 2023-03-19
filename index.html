@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="common.css" />
+        <link rel="stylesheet" href="theme.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div
+            class="grid-stack-item ui-draggable-disabled ui-resizable-disabled"
+            gs-x="2"
+            gs-y="5"
+            gs-w="2"
+            gs-h="2"
+            gs-id="stuSiganpyo::6616fbef-1286-49f1-98a3-d15c405940e0"
+        >
+            <div class="grid-stack-item-content" data-sizex="1" data-sizey="2">
+                <script type="text/javascript">
+                    let url_stuSiganpyo = "/wz/api/ucan/haksa/stuSiganpyo";
+                    $(document).ready(function () {
+                        stuSiganpyo();
+                    });
+
+                    /*$(".stuSiganpyo").mCustomScrollbar({
+            theme: "dark"
+        });*/
+
+                    function stuSiganpyo() {
+                        $.getJSON(url_stuSiganpyo, null, function (data) {
+                            if (data.data != null) {
+                                $("#stuSiganpyo").html(
+                                    $("#stuSiganpyoTemplate").render(data.data)
+                                );
+                            } else {
+                                alert($.t(data.message));
+                            }
+                            $("#stuSiganpyoSemester").html(
+                                data.year + "년" + data.hakgi + "학기"
+                            );
+                        });
+                    }
+                </script>
+                <div class="p_23">
+                    <ul class="tab_btn_area cf">
+                        <li><h3>수업시간표(학생)</h3></li>
+                    </ul>
+                    <div>
+                        <a
+                            id="stuSiganpyoSemester"
+                            class="semester"
+                            style="color: black; text-decoration: none"
+                            >2023년1학기</a
+                        >
+                    </div>
+                    <div
+                        class="stuSiganpyo"
+                        style="height: 450px; overflow: auto"
+                    >
+                        <table>
+                            <tbody>
+                                <tr class="theme_target02">
+                                    <td class="first_table"></td>
+                                    <td class="first_table">월</td>
+                                    <td class="first_table">화</td>
+                                    <td class="first_table">수</td>
+                                    <td class="first_table">목</td>
+                                    <td class="first_table">금</td>
+                                    <td class="first_table">토</td>
+                                </tr>
+                            </tbody>
+                            <tbody id="stuSiganpyo">
+                                <tr>
+                                    <td>1교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>알고리즘실습</td>
+                                    <td>창의융합</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>2교시</td>
+                                    <td>IT시스템기초</td>
+                                    <td>컴퓨터활용</td>
+                                    <td>스마트미디어활용</td>
+                                    <td>알고리즘실습</td>
+                                    <td>창의융합</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>3교시</td>
+                                    <td>IT시스템기초</td>
+                                    <td>컴퓨터활용</td>
+                                    <td>스마트미디어활용</td>
+                                    <td>알고리즘실습</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>4교시</td>
+                                    <td>IT시스템기초</td>
+                                    <td>컴퓨터활용</td>
+                                    <td>스마트미디어활용</td>
+                                    <td>알고리즘실습</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>5교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>6교시</td>
+                                    <td>의사소통능력</td>
+                                    <td></td>
+                                    <td>생활영어</td>
+                                    <td>대학생활의이해</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>7교시</td>
+                                    <td>의사소통능력</td>
+                                    <td></td>
+                                    <td>생활영어</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>8교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>9교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간1교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간2교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간3교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간4교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간5교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>야간6교시</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <script
+                    id="stuSiganpyoTemplate"
+                    type="text/x-jsrender"
+                    data-jsv-tmpl="jsvTmpl"
+                >
+                    <tr>
+                        <td>{{:gyosi}}</td>
+                        <td>{{:gwamok01}}</td>
+                        <td>{{:gwamok02}}</td>
+                        <td>{{:gwamok03}}</td>
+                        <td>{{:gwamok04}}</td>
+                        <td>{{:gwamok05}}</td>
+                        <td>{{:gwamok06}}</td>
+                    </tr>
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
