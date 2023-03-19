@@ -468,3 +468,7 @@ h1{
 
 -   Animation in one line
     animation: box-mover 4s linear 2s 2 backwards alternate running;
+
+# 24. Flexbox
+
+-   position elements without the use of position or/and float
