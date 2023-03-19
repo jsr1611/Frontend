@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-    <!-- <style>
-        .heading{
-            color: red;
-        }
-        .link{
-            color: green;
-        }
-    </style> -->
-</head>
-<body>
-    <div class="container">
-        <form action="/server.php" method="get">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name">
-            <label for="surname">Surname</label>
-            <input type="text" name="surname" id="surname" placeholder="Your surname">
-            
-            <label for="gender">Choose your gender:</label><br>
-            <label class="form-control" for="male">Male
-                <input type="radio" name="gender" id="male">
-                <span class="custom-radio"></span>
-            </label>
-            <label class="form-control" for="female">Female
-                <input type="radio" name="gender" id="female">
-                <span class="custom-radio"></span>
-            </label>
-            <br>
-            <label for="profession">Profession:</label><br>
-            <label class="form-control2">Engineer
-                <input type="checkbox" name="job1" id="engineer">
-                <span class="custom-checkbox"></span>
-            </label>
-            <label class="form-control2">Teacher
-                <input type="checkbox" name="job2" id="teacher">
-                <span class="custom-checkbox"></span>
-            </label>
-            <br>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Document</title>
+        <style>
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 1s, background-color 1s;
+            }
+            .box:hover {
+                width: 400px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                mouse hover forces to scale the width 2 times, and background
+                color to change to green;
+            </div>
+        </div>
 
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="uzbekistan" selected>Uzbekistan</option>
-                <option value="korea">Korea</option>
-                <option value="us">US</option>
-            </select>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    
-</body>
+        <div class="container">
+            <form action="/server.php" method="get">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your name"
+                />
+                <label for="surname">Surname</label>
+                <input
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Your surname"
+                />
+
+                <label for="gender">Choose your gender:</label><br />
+                <label class="form-control" for="male"
+                    >Male
+                    <input type="radio" name="gender" id="male" />
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control" for="female"
+                    >Female
+                    <input type="radio" name="gender" id="female" />
+                    <span class="custom-radio"></span>
+                </label>
+                <br />
+                <label for="profession">Profession:</label><br />
+                <label class="form-control2"
+                    >Engineer
+                    <input type="checkbox" name="job1" id="engineer" />
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label class="form-control2"
+                    >Teacher
+                    <input type="checkbox" name="job2" id="teacher" />
+                    <span class="custom-checkbox"></span>
+                </label>
+                <br />
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="uzbekistan" selected>Uzbekistan</option>
+                    <option value="korea">Korea</option>
+                    <option value="us">US</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Your message"
+                ></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </body>
 </html>

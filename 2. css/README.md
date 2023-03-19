@@ -353,3 +353,66 @@ h1{
         -   -2px
         -   4px
         -   -5px
+
+# 21. CSS Advanced.
+
+## 2D transforms
+
+-   rotate()
+    -   positive number: rotate in clockwise direction
+    -   negative number: rotate against the clock direction
+        ```
+        transform: rotate(45deg);
+        transform-origin: top left;
+        ```
+    -   transform-origin: starting point for rotation;
+-   translate()
+    -   move element to x,y direction by pixels (etc.)
+        ```
+            transform: translate(15px, 25px);
+        ```
+-   scale()
+    -   scale the element's height and width by times
+    -   has specific scaleX(), scaleY() methods
+        ```
+        transform: scale(0.5, 0.25);
+        ```
+-   skew()
+    -   has specific skewX(), skewY() methods
+        ```
+        transform: skew(20deg, 0deg);
+        ```
+
+## 3D transforms
+
+-   rotate3d()
+    -   tranform: rotate3d(x-value, y-value, z-value, degree)
+    -   can have `perspective(100px)` form
+    -   has specific methods: rotate3dX(), rotate3dY(), rotate3dZ()
+    -   reference: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d)
+        ```
+        tranform: rotate3d(1, 2, -1, 30deg);
+        ```
+-   translate3d()
+    -   transform: translate3d(10px, 20px, 30px)
+        -   z-value : zoom-in (positive) or zoom-out (negative)
+-   scale3d()
+    -   transform: scale3d(2, 3, 4)
+        -   reference: [link](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale3d)
+
+# 22. Transitions
+
+-   controlling the change that happens within given time period
+-   ex: `:hover` event happens immediately when mouse enters onto the element, but with transition we can control the delay of the event / or animate the event
+    ```
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: width 2s, background-color 4s;
+    }
+    .box:hover{
+        width: 400px;
+        background-color: green;
+    }
+    ```
