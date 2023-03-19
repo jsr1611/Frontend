@@ -555,3 +555,18 @@ h1{
 
 -   [mozilla developer](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 -   [css tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+# 26. Best Practices
+
+-   CSS code must be easy to read
+-   file must contain general or common styles first
+-   create HTML first
+-   use shorthands
+-   use comments to clarify code
+-   never use inline styles
+-   use CSS [validators](https://jigsaw.w3.org/css-validator/)
+-   use multiple files for different styles
+-   use Flexbox or Grid to create layout
+-   try avoiding !important
+-   apply kebab-case for classes and ids
+-   apply [BEM](https://en.bem.info/methodology/) methods (Block- Element - Modifier)
