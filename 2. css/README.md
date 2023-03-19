@@ -402,6 +402,8 @@ h1{
 
 # 22. Transitions
 
+## General usage
+
 -   controlling the change that happens within given time period
 -   ex: `:hover` event happens immediately when mouse enters onto the element, but with transition we can control the delay of the event / or animate the event
     ```
@@ -416,3 +418,20 @@ h1{
         background-color: green;
     }
     ```
+-   transition: all xs;
+    -   applys to all properties
+-   some elements don't have transition effect
+
+## Transition timing function
+
+-   ease
+-   linear
+-   ease-in
+-   ease-out
+-   ease-in-out
+-   cubic-bezier(x,y,z,k)
+
+## Transition delay
+
+-   used for delaying transition effects
+-   transition-delay: xs;
