@@ -177,17 +177,22 @@ a {
     z-index: 10;
 }
 
+.main-header .container {
+    display: flex;
+    align-items: center;
+}
+/* 
 .main-header__brand {
     display: inline-block;
     vertical-align: middle;
-}
+} */
 .main-header__brand img {
     width: 64px;
 }
-.main-nav {
+/* .main-nav {
     display: inline-block;
     vertical-align: middle;
-}
+} */
 .main-nav__item,
 .footer-nav__item {
     display: inline-block;
