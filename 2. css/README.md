@@ -439,7 +439,21 @@ h1{
 # 23. Animations
 
 -   keyframes
+
     ```
     @keyframes animationName{
+        0%{
+
+        }
+        100%{
+
+        }
     }
     ```
+
+-   Animation direction
+-   it works if only there is positive number set for animation-iteration-count
+    -   normal
+    -   reverse
+    -   alternate
+    -   alternate-reverse
