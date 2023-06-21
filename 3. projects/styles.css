@@ -1,0 +1,48 @@
+#flag{
+    width: 50%;
+    height: 30%;
+}
+.line{
+    height: 8rem;
+}
+.blue{
+    background-color: blue;
+    display: flex;
+}
+.white{
+    background-color: #fff;
+}
+.red-line{
+    background-color: red;
+    height: 0.5rem;
+}
+.green{
+    background-color: green;
+}
+
+.star{
+    display: flex;
+    justify-content: end;
+}
+
+.stars{
+    padding-top: 0.4rem;
+    width: 4rem;
+}
+
+.fa-star{
+    font-size: 0.5rem;
+    color: #fff;
+}
+.fa-moon{
+    color: #fff;
+}
+
+.moon{
+    font-size: 1.7rem;
+    width: 2.0rem;
+    height: 2.3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
