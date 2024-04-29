@@ -1,16 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
+import { BroadcastService, EventKeys } from './services/broadcast.service';
+import * as _ from "underscore";
+import { LoginComponent } from './login/login.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent
+  imports: [
+    CommonModule, 
+    RouterOutlet, 
+    HeaderComponent, 
+    MatSidenavModule,
+    LoginComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'angular-app';
+  @ViewChild("sidenav") sidenav: MatSidenav | null = null;
+  
+  constructor(broadcastService: BroadcastService){
+    _.bindAll(this, "onLoginClicked");
+    broadcastService.on(EventKeys.LOGIN_BUTTON_CLICKED)
+      .subscribe(this.onLoginClicked);  
+  }
+  onLoginClicked(event: string) {
+    console.log(`AppComponent received: ${event}`);
+    this.sidenav?.open();
+  }
 }

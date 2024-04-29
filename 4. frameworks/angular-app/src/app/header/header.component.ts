@@ -11,5 +11,7 @@ import { UserDetailsComponent } from '../user-details/user-details.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+onUserDetailsEvent(event: any){
+  console.log(`event: ${event}`);
+}
 }
