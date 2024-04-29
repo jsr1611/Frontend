@@ -11,11 +11,12 @@ import { LoginComponent } from './login/login.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterOutlet, 
-    HeaderComponent, 
+    CommonModule,
+    RouterOutlet,
+    HeaderComponent,
     MatSidenavModule,
-    LoginComponent
+    LoginComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
@@ -23,11 +24,16 @@ import { LoginComponent } from './login/login.component';
 export class AppComponent {
   title = 'angular-app';
   @ViewChild("sidenav") sidenav: MatSidenav | null = null;
-  
+
   constructor(broadcastService: BroadcastService){
-    _.bindAll(this, "onLoginClicked");
+    _.bindAll(this, "onLoginClicked", "onLoginEvent");
     broadcastService.on(EventKeys.LOGIN_BUTTON_CLICKED)
-      .subscribe(this.onLoginClicked);  
+      .subscribe(this.onLoginClicked);
+    broadcastService.on(EventKeys.USER_LOGIN_EVENT)
+      .subscribe(this.onLoginEvent);
+  }
+  onLoginEvent() {
+    this.sidenav?.close();
   }
   onLoginClicked(event: string) {
     console.log(`AppComponent received: ${event}`);
